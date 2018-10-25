@@ -7,7 +7,10 @@ def reverse_each_word(word)
        counter -= 1
        reversed_word << single_word[counter]
     end
-    reversed_word << " "
+    if single_word == arr[-1]
+    else
+      reversed_word << " "
+    end
   end
   puts reversed_word
   return reversed_word
