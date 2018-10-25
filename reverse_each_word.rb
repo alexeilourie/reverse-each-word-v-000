@@ -1,12 +1,13 @@
 def reverse_each_word(word)
   arr = word.split(" ")
-  reversed = ""
-  reversed_word = []
+  reversed = []
   arr.each do |word|
-    word.each do |letter|
-      reversed_word.unshift|letter
+    counter = word.length
+    while word.length > 0
+       counter -= 1
+       reversed_word << word[counter]
     end
-    reversed << reversed_word.join
+    reversed_word << " "
   end
-  puts reversed
+  puts reversed_word
 end
