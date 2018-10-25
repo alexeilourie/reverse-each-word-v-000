@@ -1,6 +1,6 @@
 def reverse_each_word(word)
   arr = word.split(" ")
-  reversed = []
+  reversed_word = ""
   arr.each do |word|
     counter = word.length
     while word.length > 0
