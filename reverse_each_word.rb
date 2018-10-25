@@ -10,4 +10,5 @@ def reverse_each_word(word)
     reversed_word << " "
   end
   puts reversed_word
+  return reversed_word
 end
